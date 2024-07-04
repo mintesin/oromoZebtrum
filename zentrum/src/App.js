@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+function App(data) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <header className="App-header">
+          <i> Identität stärken, Integration fördern, Akzeptanz schaffen -</i>
+          <h1>Oromo Horn von Afrika Zentrum e.V.</h1>
+          <h1>{data.name}</h1>
+        </header>
+      </div>
+      <div>
+        <p></p>
+      </div>
     </div>
   );
 }
